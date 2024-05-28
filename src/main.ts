@@ -12,11 +12,12 @@ async function bootstrap() {
   //habilita los cors
   app.enableCors()
 
+  //minuto 11:46 del video seccion 2 / ENV
   //aumenta el payload permitido
   app.use(json({limit: "60mb"}))
 
   //versionar el código
-  
+
 
   const config = new DocumentBuilder()
   .setTitle("Cats Example")
