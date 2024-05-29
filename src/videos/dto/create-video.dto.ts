@@ -1,5 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { IsNotEmpty, IsUrl, Length } from "class-validator";
+import { IsNotEmpty, IsNumber, IsUrl, Length, Max } from "class-validator";
 
 export class CreateVideoDto {
 
@@ -16,5 +16,9 @@ export class CreateVideoDto {
 
     asd: string
 
+
+    @IsNumber()
+    @Max(500)
+    number: number 
 
 }
