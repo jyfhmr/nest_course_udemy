@@ -77,6 +77,8 @@ export class VideosController {
     return "asd"
 
   }
+
+  //las entidades son como tablas
  
 
 }
